@@ -1,0 +1,7 @@
+<templateSet group="Groovy">
+  <template name="svm" value="static void main(String[] args){&#10;  $END$&#10;}" description="Groovy main() method declaration" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="GROOVY_DECLARATION" value="true" />
+    </context>
+  </template>
+</templateSet>
