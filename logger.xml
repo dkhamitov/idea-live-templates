@@ -1,0 +1,37 @@
+<templateSet group="logger">
+  <template name="logger" value="private final static Logger $VAR$ = LoggerFactory.getLogger($className$.class);" description="Static logger in a class (default name is LOG)" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="&quot;LOG&quot;" alwaysStopAt="true" />
+    <variable name="className" expression="className()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="logdebug" value="$LOGGER_NAME$.debug(&quot;$MESSAGE$&quot;$END$);" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="LOGGER_NAME" expression="" defaultValue="&quot;LOG&quot;" alwaysStopAt="true" />
+    <variable name="MESSAGE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="loginfo" value="$LOGGER_NAME$.info(&quot;$MESSAGE$&quot;$END$);" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="LOGGER_NAME" expression="" defaultValue="&quot;LOG&quot;" alwaysStopAt="true" />
+    <variable name="MESSAGE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="logwarn" value="$LOGGER_NAME$.warn(&quot;$MESSAGE$&quot;$END$);" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="LOGGER_NAME" expression="" defaultValue="&quot;LOG&quot;" alwaysStopAt="true" />
+    <variable name="MESSAGE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="logerror" value="$LOGGER_NAME$.error(&quot;$MESSAGE$&quot;$END$);" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="LOGGER_NAME" expression="" defaultValue="&quot;LOG&quot;" alwaysStopAt="true" />
+    <variable name="MESSAGE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+</templateSet>
