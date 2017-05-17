@@ -1,5 +1,5 @@
 <templateSet group="logger">
-  <template name="logger" value="private final static Logger $VAR$ = LoggerFactory.getLogger($className$.class);" description="Static logger in a class (default name is LOG)" toReformat="false" toShortenFQNames="true">
+  <template name="logger" value="private static final Logger $VAR$ = LoggerFactory.getLogger($className$.class);" description="Static logger in a class (default name is LOG)" toReformat="false" toShortenFQNames="true">
     <variable name="VAR" expression="" defaultValue="&quot;LOG&quot;" alwaysStopAt="true" />
     <variable name="className" expression="className()" defaultValue="" alwaysStopAt="true" />
     <context>
