@@ -17,4 +17,12 @@
       <option name="JAVA_DECLARATION" value="true" />
     </context>
   </template>
+  <template name="currms" value="System.currentTimeMillis()" description="System.currentTimeMillis()" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="GROOVY_EXPRESSION" value="true" />
+      <option name="GROOVY_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
 </templateSet>
